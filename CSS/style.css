@@ -1,0 +1,110 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+
+h3 {
+ text-align: center;
+ text-decoration: underline blue none;
+}
+
+table {
+  text-align: center; 
+}
+table {
+text-align: center;
+}
+
+section {
+  text-align: center;
+}
+
+p, h4{
+  font-family:
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+p {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: justify;
+}
+
+img {
+  display: none;
+}
+
+a {
+  text-decoration: none ;
+}
+
+/* chamar um id especifico */
+#unique-p {
+  background-color: orange;
+  height: 200px;
+}
+
+#paragrafo2 {
+  background-color: chartreuse;
+
+}
+
+/* chamar uma classe */
+.lorem-ipsum {
+  background-color: rosybrown;
+
+  }
+  
+/* selector descendente (h5 filhos da section) */
+  section h5 {
+    color: teal;
+    background-color: floralwhite;
+
+  }
+
+  /* selector de atributos */
+  a[href*="iefp"] {
+    color: #3a8c64;
+  }
+
+  a:hover {
+    background-color: black;
+  }
+
+/* media queries para impressões */
+@media print 
+  nav {
+    display: none;
+  }
+     p,
+    h3 {
+        background-color: #ffffff;
+        color: #000000;
+  }
+
+  /* media queries para mobile */
+  @media (min-width: 500px) {
+    img {
+      display: block;
+    }
+}
+p,
+    h3 {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+/* media para min 1000px */
+@media (min-width: 1000px) {
+    img {
+        display: block;
+    }
+ 
+    p,
+    h3 {
+        background-color: green;
+        color: #000000;
+    }
+}

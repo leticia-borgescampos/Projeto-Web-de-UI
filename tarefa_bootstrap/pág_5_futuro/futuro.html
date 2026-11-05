@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que eu espero do futuro?</title>
+    <link rel="icon" type="image/png" href="/tarefa_bootstrap/images/" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body id="topo">
+
+    <!-- [Topo / Marca] -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="/tarefa_bootstrap/images/clock.png" alt="Relógio" width="50" height="50">
+          <span>O que espero do futuro?</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- [Navegação Abas] -->
+    <div class="container mt-3>" 
+      <nav class="navbar navbar-expand-lg">
+        <ul class="nav nav-tabs w-100" >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/tarefa_bootstrap/pág_1_quemsoueu/quemsoueu.html">Quem sou eu?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tarefa_bootstrap/pág_2_deondevim/deondevim.html">De onde vim?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tarefa_bootstrap/pág_3_do_que_eu_gosto/do_que_eu_gosto.html">Do que eu gosto?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tarefa_bootstrap/pág_4_oquemeinspira/oquemeinspira.html">O que me inspira?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="/tarefa_bootstrap/pág_5_futuro/futuro.html">O que eu espero do futuro?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- [Conteúdo Principal] -->
+    <main class="container my-5 bg-info p-4 rounded-4 border shadow-sm">
+      <div class="p-4">
+        
+        <!-- Título Principal -->
+        <h1 class="display-6 fw-bold text-light-emphasis mb-4 d-flex align-items-center gap-2">
+          <i class="bi bi-rocket-takeoff-fill text-danger"></i> O que eu espero do futuro?
+        </h1>
+
+        <!-- Parágrafos de Futuro -->
+        <p class="fs-5 text-light-emphasis mb-3">
+          Espero me tornar uma profissional de UX/UI Design, trabalhar em projetos desafiadores e contribuir para a criação de experiências digitais significativas e acessíveis para todos os usuários.
+        </p>
+        <p class="fs-5 text-light-emphasis mb-4">
+          Também espero continuar a aprender e a crescer como pessoa, explorando novos interesses e descobrindo novas formas de me expressar e de me conectar com o mundo ao meu redor.
+        </p>
+
+        <!-- Linha divisória -->
+        <hr class="my-4 opacity-25">
+
+        <!-- Seção do Formulário -->
+        <h2 class="h3 fw-bold text-light-emphasis mb-3">
+          <i class="bi bi-chat-heart-fill me-2"></i> E você?
+        </h2>
+        <p class="fs-6 text-light-emphasis mb-4">
+          Se chegou até aqui, já sabe algumas coisas sobre mim. Agora quero saber um pouco sobre você!
+        </p>
+
+        <!-- Formulário de Contacto em Cartão -->
+        <div class="card bg-light border-0 shadow-sm rounded-4 p-4">
+          <form action="/tarefa_bootstrap/mensagem_form/mensagemform.html" method="get">
+            
+            <!-- Nome -->
+            <div class="mb-3">
+              <label for="nome" class="form-label fw-semibold">Como você gosta de ser chamado(a)?</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <!-- Contacto -->
+            <div class="mb-3">
+              <label for="contacto" class="form-label fw-semibold">Como eu posso te encontrar?</label>
+              <input type="text" class="form-control" id="contacto" placeholder="Telefone ou rede social">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Qual o seu email?</label>
+              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+
+            <!-- Cor Favorita -->
+            <div class="mb-3">
+              <label for="cor" class="form-label fw-semibold">Qual a sua cor favorita?</label>
+              <input type="color" class="form-control form-control-color w-100" id="cor" name="cor" value="#ffc0cb">
+            </div>
+
+            <!-- Data / Idade -->
+            <div class="mb-4">
+              <label for="data" class="form-label fw-semibold">Insira a sua idade / data</label>
+              <input type="datetime-local" class="form-control" id="data">
+            </div>
+
+            <hr class="my-4 opacity-25">
+
+            <!-- Interesses em Comum (Radio) -->
+            <h5 class="fw-bold text-dark mb-3">Temos algum interesse em comum?</h5>
+            <div class="mb-4">
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Design"><label class="form-check-label" for="Design">Design</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Viagens"><label class="form-check-label" for="Viagens">Viagens</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Natureza"><label class="form-check-label" for="Natureza">Natureza</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Filmes"><label class="form-check-label" for="Filmes">Filmes e séries</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Livros"><label class="form-check-label" for="Livros">Livros</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Aprender"><label class="form-check-label" for="Aprender">Aprender coisas novas</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="interesse" id="Outra"><label class="form-check-label" for="Outra">Outra coisa</label></div>
+            </div>
+
+            <!-- O que te trouxe até aqui (Checkbox) -->
+            <h5 class="fw-bold text-dark mb-3">O que te trouxe até aqui?</h5>
+            <div class="mb-4">
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="Curiosidade"><label class="form-check-label" for="Curiosidade">Curiosidade</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="Formacao"><label class="form-check-label" for="Formacao">Formação</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="Lorem"><label class="form-check-label" for="Lorem">O misterioso caso do Lorem Ipsum</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="OutraRazao"><label class="form-check-label" for="OutraRazao">Outra razão</label></div>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <button type="submit" class="btn btn-dark w-100 py-2 rounded-3 shadow-sm">
+              <i class="bi bi-send-fill me-2"></i> Enviar ! (ou não)
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- [Paginação e Rodapé] -->
+    <div class="container mb-5">
+      <nav aria-label="Navegação de páginas">
+        <ul class="pagination justify-content-center">
+          <li class="page-item-active">
+            <a class="page-link rounded-start" href="/tarefa_bootstrap/index.html"> <i class="bi bi-house-door me-1"></i> Homepage</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_1_quemsoueu/quemsoueu.html">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_2_de_onde_vim/de_onde_vim.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_3_doqueeugosto/doqueeugosto.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_4_oquemeinspira/oquemeinspira.html">4 </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_5_o_que_eu_espero_do_future/o_que_eu_espero_do_future.html">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/tarefa_bootstrap/pág_1_quemsoueu/quemsoueu.html">Quem sou eu? <i class="bi bi-arrow-right ms-1"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- [Rodapé] -->
+<footer class="bg-body-tertiary text-center text-muted py-4 mt-auto border-top border-danger-subtle">
+  <div class="container">
+    <p class="mb-1 fw-semibold text-secondary">
+      Desenvolvido por Letícia Campos
+    </p>
+    <p class="small text-muted mb-0">
+      &copy; 2026 — Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+<!-- [Rodapé] -->
+
+    <!-- [JavaScript do Bootstrap] -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
